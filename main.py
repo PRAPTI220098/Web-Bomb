@@ -6,7 +6,7 @@ c = 0
 f = 0
 def MyApp():
     global f, c
-    skc = input.input_group('• Call Bomber By: ( SANCHIT 💸 )', [input.input(" • Enter Your Number (without +91) ", name="SK")]);SK = str(skc["SK"])
+    skc = input.input_group('• Call Bomber By: SANCHIT 💸', [input.input(" • Enter Your Number (without +91) ", name="SK")]);SK = str(skc["SK"])
     while True:
         req = requests.get(f"https://bomber-tools.xyz/?mobile={SK}&accesskey=BomberSmm&submit=Submit").text
         if 'started' in req:
