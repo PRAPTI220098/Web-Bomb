@@ -8,7 +8,7 @@ count = {}
 def scroll():
     output.put_html('<script>window.scrollTo(0, document.body.scrollHeight);</script>')
 def MyApp():
-    skc = input.input_group('• Call Bomber By: SANCHIT 💸', [input.input(" • Enter Your Number (without +91) ", name="SK")])
+    skc = input.input_group('• Call Bomber By: SANCHIT 💸', [input.input(" • Enter Victim Number (without +91) ", name="SK")])
     SK = str(skc["SK"])
     if SK not in count:
         count[SK] = {"successful": 0, "failed": 0}
